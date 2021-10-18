@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cls-og-gQM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--VC3-->
+        <scene sceneID="Nhr-CO-atG">
+            <objects>
+                <viewController id="Cls-og-gQM" customClass="VC3" customModule="AmazonApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c9v-DU-ibU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="Orq-ru-Z6Y">
+                                <rect key="frame" x="0.0" y="82" width="414" height="693"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="693" id="cMQ-x4-181"/>
+                                    <constraint firstAttribute="width" constant="414" id="hHw-Yw-OKN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="05y-K0-gpP">
+                                <rect key="frame" x="65" y="202" width="281" height="471"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="471" id="7Dn-qt-Uct"/>
+                                    <constraint firstAttribute="width" constant="281" id="qJw-eR-wPt"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWc-7L-55H">
+                                <rect key="frame" x="0.0" y="775" width="414" height="121"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="add photo">
+                                    <fontDescription key="titleFontDescription" name="PartyLetPlain" family="Party LET" pointSize="70"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="openPressed:" destination="Cls-og-gQM" eventType="touchUpInside" id="WqP-he-Atr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sara Image View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fe-Sz-u7V">
+                                <rect key="frame" x="87" y="59" width="272" height="59"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="50"/>
+                                <color key="textColor" red="0.71461351699999998" green="0.47819810769999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Aen-li-1kt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="05y-K0-gpP" firstAttribute="leading" secondItem="Aen-li-1kt" secondAttribute="leading" constant="65" id="0Vt-4R-cVK"/>
+                            <constraint firstItem="05y-K0-gpP" firstAttribute="top" secondItem="9fe-Sz-u7V" secondAttribute="bottom" constant="84" id="3vY-kE-maN"/>
+                            <constraint firstItem="Aen-li-1kt" firstAttribute="trailing" secondItem="9fe-Sz-u7V" secondAttribute="trailing" constant="55" id="6kR-ac-7HN"/>
+                            <constraint firstItem="Orq-ru-Z6Y" firstAttribute="leading" secondItem="Aen-li-1kt" secondAttribute="leading" id="FaP-TX-ocn"/>
+                            <constraint firstItem="05y-K0-gpP" firstAttribute="top" secondItem="Aen-li-1kt" secondAttribute="top" constant="158" id="GGV-Zf-cqI"/>
+                            <constraint firstItem="qWc-7L-55H" firstAttribute="trailing" secondItem="Aen-li-1kt" secondAttribute="trailing" id="GXf-7B-ePg"/>
+                            <constraint firstItem="Orq-ru-Z6Y" firstAttribute="trailing" secondItem="Aen-li-1kt" secondAttribute="trailing" id="K8w-HP-4Zf"/>
+                            <constraint firstItem="9fe-Sz-u7V" firstAttribute="leading" secondItem="Aen-li-1kt" secondAttribute="leading" constant="87" id="LQq-5Y-Vwm"/>
+                            <constraint firstItem="9fe-Sz-u7V" firstAttribute="top" secondItem="Aen-li-1kt" secondAttribute="top" constant="15" id="X1N-Dh-wx1"/>
+                            <constraint firstItem="qWc-7L-55H" firstAttribute="leading" secondItem="Aen-li-1kt" secondAttribute="leading" id="aG9-kB-1Ec"/>
+                            <constraint firstAttribute="bottom" secondItem="qWc-7L-55H" secondAttribute="bottom" id="fFG-cE-urU"/>
+                            <constraint firstItem="qWc-7L-55H" firstAttribute="top" secondItem="Orq-ru-Z6Y" secondAttribute="bottom" id="nh6-Tj-UFf"/>
+                            <constraint firstItem="Orq-ru-Z6Y" firstAttribute="top" secondItem="Aen-li-1kt" secondAttribute="top" constant="38" id="ozv-BM-tLZ"/>
+                            <constraint firstItem="Aen-li-1kt" firstAttribute="trailing" secondItem="05y-K0-gpP" secondAttribute="trailing" constant="68" id="z1g-Rf-HAa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ourImageView" destination="05y-K0-gpP" id="0w4-U5-a66"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L3z-l9-IFj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="36.830357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image" width="736" height="1103"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
