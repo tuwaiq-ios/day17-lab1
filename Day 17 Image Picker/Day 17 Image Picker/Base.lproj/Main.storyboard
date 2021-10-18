@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Day_17_Image_Picker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gvG-3V-ED5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72G-rA-eMO">
+                                <rect key="frame" x="135.5" y="745" width="143" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="open photo library"/>
+                                <connections>
+                                    <action selector="opendPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t05-vH-FuQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="gvG-3V-ED5" secondAttribute="bottom" id="B5h-yv-sz3"/>
+                            <constraint firstItem="gvG-3V-ED5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Duh-7Z-vUX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="72G-rA-eMO" secondAttribute="bottom" constant="86" id="NXX-LV-pCH"/>
+                            <constraint firstItem="gvG-3V-ED5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QKd-l7-oe2"/>
+                            <constraint firstItem="72G-rA-eMO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135.5" id="Ubx-wZ-heR"/>
+                            <constraint firstItem="gvG-3V-ED5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VBr-Iu-emU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="72G-rA-eMO" secondAttribute="trailing" constant="135.5" id="e7l-uY-wp0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="openedImageView" destination="gvG-3V-ED5" id="jhg-4J-2qb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
